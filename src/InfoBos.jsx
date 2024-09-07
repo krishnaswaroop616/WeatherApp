@@ -16,7 +16,7 @@ export default function InfoBox({info}){
             <Card sx={{ maxWidth: 345 }} style={cardstyle}>
       <CardMedia
         sx={{ height: 160 }}
-        image={info.humidity>85?RAIN_URL:(info.temp>20?HOT_URL:COLD_URL)}
+        image={info.humidity>85?RAIN_URL:(info.temp>30?HOT_URL:COLD_URL)}
         title="green iguana"
       />
       <CardContent>
